@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPA Checker</title>
+  </head>
+  <body style="display: flex; justify-content: center">
+    <div style="display: flex; flex-direction: column; align-items: center">
+      <h1>Should I take Cyproterone acetate today?</h1>
+      <span id="answer"></span>
+    </div>
+    <script>
+      const yesRefDate = new Date(new Date("2025-11-24").toDateString());
+      const today = new Date(new Date().toDateString());
+      const diff = today.getTime() - yesRefDate.getTime();
+      const days = Math.round(diff / (1000 * 60 * 60 * 24));
+      const answer = document.getElementById("answer");
+      answer.innerText = days % 2 == 0 ? "Yes!" : "No.";
+    </script>
+  </body>
+</html>
