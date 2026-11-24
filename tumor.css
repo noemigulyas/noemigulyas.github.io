@@ -1,0 +1,32 @@
+body {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: monospace;
+    user-select: none;
+}
+
+#show {
+    background: none;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    color: white;
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+#show:hover {
+    cursor: pointer;
+}
+
+#countdown {
+    font-size: 8rem;
+}
